@@ -1,0 +1,17 @@
+{
+	"urls": [
+		"http://content.warframe.com/MobileExport/Manifest/ExportWeapons.json",
+		"http://content.warframe.com/MobileExport/Manifest/ExportUpgrades.json",
+		"http://content.warframe.com/MobileExport/Manifest/ExportManifest.json",
+		"http://content.warframe.com/MobileExport/Manifest/ExportSentinels.json",
+		"http://content.warframe.com/MobileExport/Manifest/ExportResources.json",
+		"http://content.warframe.com/MobileExport/Manifest/ExportDrones.json",
+		"http://content.warframe.com/MobileExport/Manifest/ExportCustoms.json",
+		"http://content.warframe.com/MobileExport/Manifest/ExportFlavour.json",
+		"http://content.warframe.com/MobileExport/Manifest/ExportKeys.json",
+		"http://content.warframe.com/MobileExport/Manifest/ExportGear.json",
+		"http://content.warframe.com/MobileExport/Manifest/ExportRelicArcane.json",
+		"http://content.warframe.com/MobileExport/Manifest/ExportRegions.json",
+		"http://content.warframe.com/MobileExport/Manifest/ExportWarframes.json"
+	]
+}
