@@ -24,7 +24,7 @@ namespace WarframeTools {
 						var name = regex.Replace(property.Name, " $1");
 						var missingItems = (List<InventoryItem>)property.GetValue(fullInventory);
 						missingItems.RemoveAll(item => playerItems.Contains(item.Key));
-						missingItems.Sort();
+						missingItems.Sort(new InventoryItemComparer());
 						var missingItemNames = missingItems.Select(item => item.Name).ToArray();
 						sw.WriteLine($"\"{name} ({missingItemNames.Length})\"\t\"{string.Join("\"\t\"", missingItemNames)}\"");
 					}

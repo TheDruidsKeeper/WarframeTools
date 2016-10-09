@@ -1,9 +1,7 @@
 ﻿using NLog;
-using System;
+using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 
 namespace WarframeTools {
 	class FullInventory {
@@ -112,11 +110,19 @@ namespace WarframeTools {
 			logger.Debug($"Loaded warframes/archwings");
 		}
 	}
+
 	class InventoryItem {
 		public string Key { get; set; }
 		public string Name { get; set; }
+
 		public override string ToString() {
 			return this.Name;
+		}
+	}
+
+	class InventoryItemComparer: IComparer<InventoryItem> {
+		public int Compare(InventoryItem x, InventoryItem y) {
+			return string.Compare(x.Name, y.Name);
 		}
 	}
 }
